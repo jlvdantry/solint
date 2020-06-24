@@ -1,0 +1,56 @@
+{
+  "name": "Portafolio de aplicativos desarrollados por José Luis Vásquez Barbosa",
+  "short_name": "Portafolio jlvdantry",
+  "icons": [
+    {
+      "src": "assets/img/jlvdantry_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/img/jlvdantry_72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "assets/img/jlvdantry_144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/img/jlvdantry_48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/img/jlvdantry_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/img/jlvdantry_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+
+
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "Description": "Portafolio de aplicaciones desarrolladas",
+  "version": "1.0",
+  "developer": {
+      "name"  : "jlvdantry"
+  },
+  "theme_color": "#06670a",
+  "background_color": "#2c3e50",
+  "dir" : "ltr",
+  "related_applications": [
+          {
+            "platform": "play",
+            "id": "com.google.samples.apps.iosched"
+          }
+  ]
+}
+
