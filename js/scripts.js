@@ -66,4 +66,28 @@
     });
   
   })(jQuery); // End of use strict
+
+	function envia_mensaje_a_sw(msg){
+	    return new Promise(function(resolve, reject){
+		var msg_chan = new MessageChannel();
+
+		msg_chan.port1.onmessage = function(event){
+		    console.log('recibio mensaje en cliente');
+		    if(event.data.error){
+			console.log('error en el dato');
+			reject(event.data.error);
+		    }else{
+			console.log('dato correcto');
+			resolve(event);
+		    }
+		};
+		navigator.serviceWorker.controller.postMessage(msg, [msg_chan.port2]);
+	    });
+	}
+
+     envia_mensaje_a_sw('dame_versiones').then(function(event) {
+                    console.log('datos recibido'+event.data);
+           var sw = document.getElementById('version_sw');
+           sw.innerHTML='Versi&oacuten: '+event.data;
+     } );
   

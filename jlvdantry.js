@@ -1,11 +1,10 @@
-var cacheName = 'jlvdantry.015';
+var cacheName = '022';
 var filesToCache = [
   'index.html',
   'pwa.json',
   'js/app.js',
-  'jlvdantry.js',
   'js/bootstrap.bundle.min.js',
-  'js/font-awesome_5.13.0_all.min.js',
+  'js/font-awesome_5.13.0_all.js',
   'js/jquery.easing.min.js',
   'js/jquery.min.js',
   'js/scripts.js',
@@ -87,4 +86,12 @@ self.addEventListener('fetch', function(e) {
                          })
   );
 });
+
+self.addEventListener('message', function(event){
+        console.log('[message] recibio mensaje de cliente ' + event.data);
+        if (event.data=='dame_versiones') {
+           event.ports[0].postMessage(cacheName);
+        }
+        console.log('No reconocio mensaje');
+    });
 
