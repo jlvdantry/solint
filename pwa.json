@@ -1,5 +1,5 @@
 {
-  "name": "Portafolio de aplicativos desarrollados por José Luis Vásquez Barbosa",
+  "name": "Portafolio de aplicativos desarrollados por jlvdantry",
   "short_name": "Portafolio jlvdantry",
   "icons": [
     {
@@ -40,10 +40,7 @@
   "orientation": "portrait-primary",
   "Description": "Portafolio de aplicaciones desarrolladas",
   "version": "1.0",
-  "developer": {
-      "name"  : "jlvdantry"
-  },
-  "theme_color": "#06670a",
+  "theme_color": "#3367D6",
   "background_color": "#2c3e50",
   "dir" : "ltr",
   "related_applications": [
