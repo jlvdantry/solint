@@ -1,4 +1,4 @@
-var cacheName = '026';
+var cacheName = '033';
 var filesToCache = [
   'index.html',
   'pwa.json',
